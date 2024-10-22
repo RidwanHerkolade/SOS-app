@@ -1,0 +1,76 @@
+.header__div {
+    width: 100%;
+    /* height: 100vh !important;  */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header__content {
+    margin: 4rem 5rem;
+}
+.header__contents h2 {
+    font-size: var(--font-logo);
+    color: var(--color-green);
+    text-transform: uppercase;
+    margin: 0.5rem 0rem;
+}
+.header__contents span {
+    /* font-size: var(--font-header); */
+    font-family: var(--font-familys);
+}
+
+.header__contents .content__paragraph {
+    font-size: var(--font-new);
+    color: var(--color-nav);
+    width: 40%;
+}
+.header__contents button {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    font-size: var(--font-small);
+    font-family: var(--font-family);
+    color: var(--color-nav);
+    background-color: var(--color-green);
+    border-radius: 0.2rem;
+    margin: 2rem 0rem;
+    cursor: pointer;
+}
+
+@media (min-width: 281px) and (max-width: 390px) {
+    .header__content {
+        margin: 4rem 2rem;
+    }
+    .header__contents .content__paragraph {
+        width: 90%;
+    }
+  }
+  
+  @media (min-width: 391px) and (max-width: 430px) {
+    .header__content {
+        margin: 4rem 2rem;
+    }
+    .header__contents .content__paragraph {
+        width: 90%;
+    }
+   
+  }
+  @media (min-width: 430px) and (max-width: 767px) {
+    .header__content {
+        margin: 4rem 2rem;
+    }
+    .header__contents .content__paragraph {
+        width: 90%;
+    }
+     
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header__contents .content__paragraph {
+        width: 70%;
+    }
+
+  }
+  
+

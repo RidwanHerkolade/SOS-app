@@ -1,0 +1,99 @@
+
+.value__divs{
+    margin: 4rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.value__divs h1 {
+    text-align: center;
+    font-size: var(--font-new);
+    font-weight: 700;
+    color: var(--color-blackie);
+    margin-top: 2rem;
+    width: 85%;
+}
+.value__divs h2 {
+    color: var(--color-green);
+    text-transform: uppercase;
+    font-size: var(--font-logo);
+}
+.value__img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 2rem;
+    margin: 3rem 0rem;
+}
+.value__images {
+    box-shadow: var(--box-shadow);
+    padding: 4rem 0rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.val__img {
+    width: 4rem;
+    height: 4rem;
+}
+.val__img img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.value__images p {
+    color: var(--color-blackie);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+@media (min-width: 281px) and (max-width: 390px) {
+    .value__divs{
+        margin: 2rem 2rem;
+    }
+    .value__divs h1 {
+        font-size: var(--font-headers);
+        width: 100%;
+    }
+    .value__img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 391px) and (max-width: 430px) {
+    .value__divs{
+        margin: 2rem 2rem;
+    }
+    .value__divs h1 {
+        font-size: var(--font-headers);
+        width: 100%;
+    }
+    .value__img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+}
+@media (min-width: 430px) and (max-width: 767px) {
+    .value__divs{
+        margin: 2rem 2rem;
+    }
+    .value__divs h1 {
+        font-size: var(--font-headers);
+        width: 100%;
+    }
+    .value__img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .value__divs h1 {
+        font-size: var(--font-headers);
+        width: 90%;
+    }
+    .value__img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
