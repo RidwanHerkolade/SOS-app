@@ -48,7 +48,13 @@ const Nav = () => {
             <MenuIcon style={{ fontSize: "3rem" }} />
           )}
         </div>
-
+        <div className="nav__list-desktop">
+          {links.map((link) => (
+            <Link to={link.pathName} key={link.title} className="links">
+              {link.title}
+            </Link>
+          ))}
+        </div>
         <AnimatePresence>
           {show && (
             <motion.div

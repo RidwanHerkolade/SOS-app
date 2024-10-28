@@ -99,6 +99,7 @@
     .vision__divsss {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin: 0rem 2rem;
         gap: 1rem;
     }
 }

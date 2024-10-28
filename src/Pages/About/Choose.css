@@ -1,0 +1,107 @@
+.choose__div {
+    background: var(--color-green);
+    padding: 2rem 0rem;
+}
+.choose__divs {
+    margin: 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.choose__divs h1 {
+    font-size: var(--font-new);
+    color: var(--color-nav);
+}
+.choose__divs .p {
+    width: 50%;
+    text-align: center;
+    margin: 1rem 0rem;
+    color: var(--color-nav);
+    font-size: var(--font-small);
+}
+.choose__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    cursor: pointer;
+    margin: 2rem;
+}
+.choose__grids {
+    background-color: var(--color-green);
+    padding: 2rem 2rem;
+    border-radius: 0.3rem;
+    border: 0.1px solid var(--color-choose);
+}
+.choose__grids:nth-child(even) {
+    background-color: var(--color-dipgreen);
+}
+.choose__grids h1 {
+    color: var(--color-nav);
+    font-size: var(--font-header);
+    font-weight: 700;
+    margin: 1rem 0rem;
+}
+.choose__grids p {
+    font-size: var(--font-small);
+    line-height: 1.5rem;
+    color: var(--color-nav);
+}
+.choose__img {
+    width: 3rem;
+    height: 3rem;
+}
+.choose__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media (min-width: 280px) and (max-width: 390px) {
+    .choose__divs .p {
+        width: 100%;
+    }
+    .choose__grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem 0rem;
+    }
+    .choose__divs {
+        margin: 0rem 2rem;
+    }
+}
+@media (min-width: 391px) and (max-width: 430px) {
+    .choose__divs .p {
+        width: 100%;
+    }
+    .choose__grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem;
+    }
+    .choose__divs {
+        margin: 0rem 2rem;
+    }
+    .choose__divs {
+        margin: 4rem 2rem;
+    }
+}
+@media (min-width: 431px) and (max-width: 767px) {
+    .choose__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .choose__divs {
+        margin: 0rem 2rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .choose__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .choose__divs {
+        margin: 0rem 2rem;
+    }   
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+    .choose__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

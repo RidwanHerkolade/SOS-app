@@ -5,9 +5,9 @@ import VisionPage from '../Vision/VisionPage'
 import Objective from '../Objectives/Objective'
 import Value from '../Value/Value'
 import LatestNews from '../LatestNews/LatestNews'
-import GetInfo from '../GetInfo/GetInfo'
-import Footer from '../Footer/Footer'
-import FooterBottom from '../Footer/FooterBottom'
+// import GetInfo from '../GetInfo/GetInfo'
+// import Footer from '../Footer/Footer'
+// import FooterBottom from '../Footer/FooterBottom'
 import "./HomePage.css"
 import { motion, useScroll, useSpring } from "framer-motion";
 
@@ -32,9 +32,7 @@ const HomePage = () => {
       <Objective/>
       <Value/>
       <LatestNews/>
-      <GetInfo/>
-      <Footer/>
-      <FooterBottom/>
+
    
     </div>
   )

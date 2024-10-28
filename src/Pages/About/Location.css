@@ -1,0 +1,127 @@
+.location__divs {
+    position: relative;
+}
+.location__div {
+    margin: 0rem 5rem;
+    position: relative;
+}
+.location__div h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+.map {
+    width: 100%;
+}
+.location__add {
+    margin: 0rem 5rem;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem;
+    background-color: var(--color-white);
+    box-shadow: 0px 19px 69px 0px #0000000F;
+    position: relative;
+    bottom: 4rem;
+}
+.loca__add {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+.address {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    position: relative;
+    font-size: var(--font-small);
+    color: #080A12;
+    font-weight: 700;
+}
+.address__dis {
+    background: var(--color-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.add__icon {
+    display: flex;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+}
+.add__icon img{
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 280px) and (max-width: 390px) {
+    .location__div {
+        margin: 0rem 2rem;
+    }
+    .loca__add {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .location__add {
+        margin: 0rem 0rem;
+        justify-content: left;
+        padding: 4rem 0rem;
+        bottom: 0rem;
+    }
+    .address {
+       margin: 0rem 1rem;
+    }
+}
+@media (min-width: 391px) and (max-width: 430px) {
+    .location__div {
+        margin: 0rem 2rem;
+    }
+    .loca__add {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .location__add {
+        margin: 0rem 0rem;
+        padding: 4rem 0rem;
+        bottom: 0rem;
+    }
+    .address {
+        margin: 0rem 1rem;
+     }
+}
+@media (min-width: 431px) and (max-width: 767px) {
+    .location__div {
+        margin: 0rem 2rem;
+    }
+    .address {
+        margin: 0rem 1rem;
+     }
+     .loca__add {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .location__div {
+        margin: 0rem 2rem;
+    }  
+    .location__add {
+        margin: 0rem 0rem;
+        padding: 4rem 0rem;
+        bottom: 0rem;
+    }
+    .loca__add {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+   
+
+}
