@@ -26,7 +26,7 @@
 }
 .headerPage__contents {
     display: flex;
-    width: 40%;
+    width: 45%;
     height: calc(100vh - 7.2rem);
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@
 }
 .headerPage__contents h1 {
     color: var(--color-nav);
-    font-size: var(--font-new);
+    font-size: var(--font-desq);
     font-weight: 800;
 }
 .headerPage__contents p {

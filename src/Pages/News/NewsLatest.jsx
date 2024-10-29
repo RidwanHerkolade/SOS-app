@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "./LatestNews.css";
+import "./NewsLatest.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variant";
-import { useNavigate } from "react-router-dom";
 
 const newsData = [
   {
@@ -30,7 +29,7 @@ const newsData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...",
   },
   {
-    id: 1,
+    id: 4,
     date: "By Admin, on Nov 23th, 2020 | 1 days ago",
     title: "Students were on a trip Jakarta, Indonesia",
     img: "./placeholder2.png",
@@ -39,7 +38,7 @@ const newsData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...",
   },
   {
-    id: 2,
+    id: 5,
     date: "By Admin, on Nov 23th, 2020 | 1 days ago",
     title: "Jobs, career presentation to Coincide with Conference",
     img: "./placeholder1.png",
@@ -47,24 +46,49 @@ const newsData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...",
   },
   {
-    id: 3,
+    id: 6,
     date: "By Admin, on Nov 23th, 2020 | 1 days ago",
     title: "JFall Sports Practices,  Meeting in December",
     img: "./placeholder2.png",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...",
   },
+  {
+    id: 7,
+    date: "By Admin, on Nov 23th, 2020 | 1 days ago",
+    title: "Jobs, career presentation to Coincide with Conference",
+    img: "./placeholder1.png",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...",
+  },
+  {
+    id: 8,
+    date: "By Admin, on Nov 23th, 2020 | 1 days ago",
+    title: "Students were on a trip Jakarta, Indonesia",
+    img: "./placeholder2.png",
+
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...",
+  },
+  {
+    id: 9,
+    date: "By Admin, on Nov 23th, 2020 | 1 days ago",
+    title: "Jobs, career presentation to Coincide with Conference",
+    img: "./placeholder1.png",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...",
+  }
 ];
 
-const LatestNews = () => {
+const NewsLatest = () => {
   // Use the useState hook inside the function component
   const [currentPage, setCurrentPage] = useState(0);
-  const itemPerPage = 3;
-  const totalPage = Math.ceil(newsData.length / itemPerPage);
+  const itemPage = 6;
+  const totalPage = Math.ceil(newsData.length / itemPage);
 
   const itemDisplay = newsData.slice(
-    currentPage * itemPerPage,
-    (currentPage + 1) * itemPerPage
+    currentPage * itemPage,
+    (currentPage + 1) * itemPage
   );
 
   const handleNextPages = () => {
@@ -78,11 +102,6 @@ const LatestNews = () => {
       setCurrentPage(currentPage - 1);
     }
   };
-  
-  const navigate = useNavigate()
-  const handleNewsReadMore =() => {
-    navigate("./news")
-  }
 
   return (
     <motion.div
@@ -93,11 +112,21 @@ const LatestNews = () => {
       viewport={{ once: false, amount: 0.4 }}
     >
       <div className="latest__news">
+        {/* <div className="newss__head">
+        <div className="newsss__head"> */}
         <h1>Latest News</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
+        {/* </div> */}
+        {/* <div className="newslatest__btn">
+            <div className="newss__btn">All </div>
+            <div className="newss__btn">Our Campus</div>
+            <div className="newss__btn">Others</div>
+            <div className="newss__btn">Education</div>
+        </div> */}
+        {/* </div> */}
         <div className="latestnews__grid">
           {itemDisplay.map((news) => (
             <motion.div
@@ -130,6 +159,8 @@ const LatestNews = () => {
                 opacity: currentPage === 0 ? 0.5 : 1,
               }}
             />
+            {/* </button> */}
+            {/* <button > */}
             <img
               src="layer2.png"
               alt="Next"
@@ -142,11 +173,11 @@ const LatestNews = () => {
             />
             {/* </button> */}
           </div>
-          <div className="readmore__btn" onClick={handleNewsReadMore}>Read more</div>
+          {/* <div className="readmore__btn">Read more</div> */}
         </div>
       </div>
     </motion.div>
   );
 };
 
-export default LatestNews;
+export default NewsLatest;

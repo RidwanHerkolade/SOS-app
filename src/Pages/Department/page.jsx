@@ -1,8 +1,13 @@
 import React from 'react'
+import Science from './Science'
+import SocialScience from './SocialScience'
+import Language from './Language'
 const DepartmentPage = () => {
   return (
     <div>
-      hello dep
+       <Science/>
+       <SocialScience/>
+       <Language/>
     </div>
   )
 }

@@ -9,6 +9,7 @@ import GetInfo from "./Component/GetInfo/GetInfo";
 import Footer from "./Component/Footer/Footer";
 import FooterBottom from "./Component/Footer/FooterBottom";
 import HeaderPages from "./Pages/HeaderPages/HeaderPages";
+import News from "./Pages/News/page";
 function App() {
   return (
     <>
@@ -17,7 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="aboutpage" element={<Aboutpage />} />
-          <Route path="departmentpage" element={<DepartmentPage />} />
+          <Route path="news" element={<News />} />
+          <Route path="admissionpage" element={<DepartmentPage />} />
           <Route path="calenderpage" element={<CalenderPage />} />
         </Routes>
         <GetInfo />

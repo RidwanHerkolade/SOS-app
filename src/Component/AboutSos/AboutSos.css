@@ -1,6 +1,3 @@
-/* .aboutsos__div {
- 
-} */
 .aboutsos__divs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

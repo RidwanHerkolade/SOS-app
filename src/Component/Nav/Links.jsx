@@ -8,8 +8,8 @@
       pathName: "/admissionpage",
     },
     {
-      title: "Facilities",
-      pathName: "/facilitiespage",
+      title: "News",
+      pathName: "/news",
     },
     {
       title: "Campus",

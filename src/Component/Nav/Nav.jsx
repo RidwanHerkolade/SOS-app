@@ -1,14 +1,20 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { AnimatePresence, motion } from "framer-motion";
 import { links } from "./Links"; // Assuming your links are an array of objects
 import "./Nav.css";
+// import { useNavigate } from "react-router-dom";
+
 
 const Nav = () => {
   const [show, setShow] = useState(false);
 
+  const navigate = useNavigate()
+  const handleNavigate = () => {
+    navigate("/")
+  }
   const handleShow = () => {
     setShow(!show);
   };
@@ -36,7 +42,7 @@ const Nav = () => {
   return (
     <div className="nav__div">
       <nav>
-        <div className="nav__logo">
+        <div className="nav__logo" onClick={handleNavigate} style={{cursor: "pointer"}}>
           <img src="./Layer.png" alt="Logo" />
           <h1>SoS</h1>
         </div>
