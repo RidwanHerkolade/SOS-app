@@ -86,9 +86,9 @@ const Science = () => {
             </div> */}
           </div>
         </div>
-        <div className="about__sos">
+        <div className="abouts__sos">
           <div>
-            <div className="aboutsos__image">
+            <div className="aboutssos__image">
               <img src="./image.png" />
             </div>
           </div>

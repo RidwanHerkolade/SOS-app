@@ -95,6 +95,17 @@
     width: 100%;
     height: 100%;
    }
+   .aboutssos__image {
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    height: 100%;
+   }
+   .aboutssos__image img{
+    width: 100%;
+    height: 100%;
+   }
    @media (min-width: 281px) and (max-width: 390px) {
     .aboutsos__divs {
       grid-template-columns: repeat(1, 1fr);
@@ -109,6 +120,13 @@
     }
     .aboutsos__image {
       width: 70% !important;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     .aboutssos__image {
+      width: 100% !important;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -136,6 +154,13 @@
       align-items: center;
       justify-content: center;
      }
+     .aboutssos__image {
+      width: 100% !important;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
     
    }
    @media (min-width: 430px) and (max-width: 767px) {
@@ -152,6 +177,13 @@
     }
     .aboutsos__image {
       width: 70% !important;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     .aboutssos__image {
+      width: 100% !important;
       overflow: hidden;
       display: flex;
       align-items: center;

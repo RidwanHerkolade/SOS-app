@@ -37,9 +37,9 @@ const Language = () => {
             </ul>
           </div>
         </div>
-        <div className="about__sos">
+        <div className="abouts__sos">
           <div>
-            <div className="aboutsos__image">
+            <div className="aboutssos__image">
               <img src="./rightSide.png" />
             </div>
           </div>

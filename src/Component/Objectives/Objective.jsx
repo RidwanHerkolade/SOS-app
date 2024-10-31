@@ -5,7 +5,7 @@ import { fadeIn } from "../../variant";
 const Objective = () => {
   return (
     <motion.div
-      variants={fadeIn("up", 0.4)}
+      variants={fadeIn("down", 0.4)}
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0.5 }}

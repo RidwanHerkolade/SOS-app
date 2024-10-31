@@ -5,14 +5,13 @@ import { fadeIn } from "../../variant";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <motion.div
-      className="footer__div"
-      variants={fadeIn("up", 0.4)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.4 }}
-    >
-      <footer>
+    <div className="footer__div">
+      <motion.footer
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.4 }}
+      >
         <div className="footer__header">
           <div className="footer__img">
             <img src="./Layer.png" />
@@ -54,8 +53,8 @@ const Footer = () => {
           <div>+123 345123 556</div>
           <div className="footer__email">schoolofscienceileife@gmail.com</div>
         </div>
-      </footer>
-    </motion.div>
+      </motion.footer>
+    </div>
   );
 };
 

@@ -12,9 +12,9 @@ const SocialScience = () => {
       viewport={{ once: false, amount: 0.4 }}
     >
       <div className="aboutsos__divs ">
-      <div className="about__sos">
+      <div className="abouts__sos">
           <div>
-            <div className="aboutsos__image">
+            <div className="aboutssos__image">
               <img src="./righSide.png" />
             </div>
           </div>

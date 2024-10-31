@@ -85,14 +85,17 @@ const LatestNews = () => {
   }
 
   return (
-    <motion.div
+    <div
       className="latest__divs"
-      variants={fadeIn("up", 0.4)}
+      // variants={fadeIn("up", 0.4)}
+      // initial="hidden"
+      // whileInView={"show"}
+      // viewport={{ once: false, amount: 0.4 }}
+    >
+      <motion.div className="latest__news" variants={fadeIn("up", 0.4)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.4 }}
-    >
-      <div className="latest__news">
+      viewport={{ once: false, amount: 0.4 }}>
         <h1>Latest News</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -144,8 +147,8 @@ const LatestNews = () => {
           </div>
           <div className="readmore__btn" onClick={handleNewsReadMore}>Read more</div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
