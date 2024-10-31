@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../../Component/Nav/Nav";
 import { useLocation } from "react-router-dom";
-import "./HeaderPage.css";
+import "./HeaderPages.css";
 import HeaderDiv from "./HeaderDiv";
 import { AdmissionContent } from "./AdmissionContent";
 import NewsHeader from "./NewsHeader";
