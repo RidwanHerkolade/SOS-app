@@ -29,7 +29,7 @@ const HeaderPages = () => {
     return null;
   }
   return (
-    <div className="header__pages">
+    <div className="headers__pages">
       <div className="overlay">
         <header>
           <Nav />
