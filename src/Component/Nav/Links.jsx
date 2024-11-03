@@ -12,8 +12,8 @@
       pathName: "/news",
     },
     {
-      title: "Campus",
-      pathName: "/campuspage",
+      title: "Contact",
+      pathName: "/contact",
     },
     {
       title: "Schools",

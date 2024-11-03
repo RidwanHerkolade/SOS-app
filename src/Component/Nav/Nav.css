@@ -33,6 +33,10 @@ nav {
   font-weight: 600;
   gap: 2rem;
 }
+.nav__list-desktop .links:focus {
+  
+  color: var(--color-green);
+}
 .menu {
   display: none;
 }

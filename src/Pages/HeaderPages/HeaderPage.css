@@ -53,6 +53,19 @@
     cursor: pointer;
     margin: 1rem 0rem;
 }
+.contact {
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem;
+    font-size: var(--font-small);
+    margin: 1rem 0rem;
+    font-family: var(--font-family);
+    cursor: pointer;
+    background: var(--color-nav);
+    border-radius: 0.3rem;
+    color: var(--color-green);
+    font-weight: 600;
+}
 @media (min-width: 281px) and (max-width: 390px) {
     .headerPage__content {
         margin: 0rem 2rem;

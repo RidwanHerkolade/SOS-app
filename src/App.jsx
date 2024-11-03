@@ -8,6 +8,7 @@ import CalenderPage from "./Pages/Calender/CalenderPage";
 import GetInfo from "./Component/GetInfo/GetInfo";
 import Footer from "./Component/Footer/Footer";
 import FooterBottom from "./Component/Footer/FooterBottom";
+import { Contact } from "./Pages/Contact/Contact";
 import HeaderPages from "./Pages/HeaderPages/HeaderPages";
 import News from "./Pages/News/page";
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path="aboutpage" element={<Aboutpage />} />
           <Route path="news" element={<News />} />
           <Route path="admissionpage" element={<DepartmentPage />} />
-          <Route path="calenderpage" element={<CalenderPage />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
         <GetInfo />
         <Footer />
