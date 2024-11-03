@@ -6,4 +6,5 @@
     height: 10px;
     background: var(--color-green);
     transform-origin: 0%;
+    z-index: 1000;
   }

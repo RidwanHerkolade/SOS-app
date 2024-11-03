@@ -45,10 +45,6 @@ const Value = () => {
             return (
               <motion.div
                 className="box"
-                /**
-                 * Setting the initial keyframe to "null" will use
-                 * the current value to allow for interruptable keyframes.
-                 */
                 whileHover={{ scale: [null, 1.1, 1.1] }}
                 transition={{ duration: 0.2 }}
               >
