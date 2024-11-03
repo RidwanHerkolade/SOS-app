@@ -1,12 +1,20 @@
-import React from 'react'
-import NewsLatest from './NewsLatest'
+import React from "react";
+import NewsLatest from "./NewsLatest";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const page = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
     <div>
-        <NewsLatest/>
+      <motion.div className="progress-bar" style={{ scaleX }} />
+      <NewsLatest />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

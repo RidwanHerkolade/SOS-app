@@ -18,7 +18,6 @@
 .newss__head {
     display: flex;
     align-items: center;
-    border: 1px solid red;
     justify-content: space-between;
 }
 .newsss__head {

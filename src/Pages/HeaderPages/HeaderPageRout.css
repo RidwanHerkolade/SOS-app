@@ -1,110 +1,103 @@
 .header__pages {
-    width: 100%;
-    height: 100vh !important; 
-    background-image: url("./header1.png");
-    background-size: cover;
-    background-position: center;
-    transition: background-image 1s ease-in-out;
-    background-repeat: no-repeat;
-    z-index: 1000;
-    position: relative;
+  width: 100%;
+  height: 100vh !important;
+  background-image: url("./header1.png") !important;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  position: relative;
 }
 .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    z-index: 5000;
-    background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 5000;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .headerPage__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 5rem;
 }
 .headerPage__contents {
-    display: flex;
-    width: 45%;
-    height: calc(100vh - 7.2rem);
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-
+  display: flex;
+  width: 45%;
+  height: calc(100vh - 7.2rem);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .headerPage__contents h1 {
-    color: var(--color-nav);
-    font-size: var(--font-desq);
-    font-weight: 800;
+  color: var(--color-nav);
+  font-size: var(--font-desq);
+  font-weight: 800;
 }
 .headerPage__contents p {
-    color: var(--font-small);
-    font-size: var(--font-small);
-    color: var(--color-para);
+  color: var(--font-small);
+  font-size: var(--font-small);
+  color: var(--color-para);
 }
 .headerPage__contents .watch {
-    color: var(--color-nav);
-    border: 0.5px solid var(--color-nav);
-    text-transform: capitalize;
-    border-radius: 0.3rem;
-    padding: 0.5rem 1.5rem;
-    cursor: pointer;
-    margin: 1rem 0rem;
+  color: var(--color-nav);
+  border: 0.5px solid var(--color-nav);
+  text-transform: capitalize;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin: 1rem 0rem;
 }
 .contact {
-    border: none;
-    outline: none;
-    padding: 0.6rem 1rem;
-    font-size: var(--font-small);
-    margin: 1rem 0rem;
-    font-family: var(--font-family);
-    cursor: pointer;
-    background: var(--color-nav);
-    border-radius: 0.3rem;
-    color: var(--color-green);
-    font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1rem;
+  font-size: var(--font-small);
+  margin: 1rem 0rem;
+  font-family: var(--font-family);
+  cursor: pointer;
+  background: var(--color-nav);
+  border-radius: 0.3rem;
+  color: var(--color-green);
+  font-weight: 600;
 }
 @media (min-width: 281px) and (max-width: 390px) {
-    .headerPage__content {
-        margin: 0rem 2rem;
-    }
-    .headerPage__contents {
-        display: flex;
-        width: 90%;
-    }
+  .headerPage__content {
+    margin: 0rem 2rem;
   }
-  @media (min-width: 391px) and (max-width: 430px) {
-    .headerPage__content {
-        margin: 0rem 2rem;
-    }
-    .headerPage__contents {
-        display: flex;
-        width: 90%;
-    }
-   
-   
+  .headerPage__contents {
+    display: flex;
+    width: 90%;
   }
-  @media (min-width: 430px) and (max-width: 767px) {
-    .headerPage__content {
-        margin: 0rem 2rem;
-    }
-    .headerPage__contents {
-        display: flex;
-        width: 90%;
-    }
-     
+}
+@media (min-width: 391px) and (max-width: 430px) {
+  .headerPage__content {
+    margin: 0rem 2rem;
   }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .headerPage__content {
-        margin: 0rem 2rem;
-    }
-    .headerPage__contents {
-        display: flex;
-        width: 80%;
-    }
-
+  .headerPage__contents {
+    display: flex;
+    width: 90%;
   }
-  
-
+}
+@media (min-width: 430px) and (max-width: 767px) {
+  .headerPage__content {
+    margin: 0rem 2rem;
+  }
+  .headerPage__contents {
+    display: flex;
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .headerPage__content {
+    margin: 0rem 2rem;
+  }
+  .headerPage__contents {
+    display: flex;
+    width: 80%;
+  }
+}
