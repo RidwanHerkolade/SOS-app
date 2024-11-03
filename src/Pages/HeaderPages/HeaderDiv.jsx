@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variant";
+import "./HeaderPageRout.css"
 const HeaderDiv = () => {
   return (
     <motion.div

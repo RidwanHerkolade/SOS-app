@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variant";
-import "./HeaderPage.css";
+import "./HeaderPageRout.css"
 
 export const ContactHeader = () => {
   const handleScroll = () => {

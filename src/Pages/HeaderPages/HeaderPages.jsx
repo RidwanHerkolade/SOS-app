@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../../Component/Nav/Nav";
 import { useLocation } from "react-router-dom";
 // import "./HeaderPages.css";
+import "./HeaderPageRout.css"
 import HeaderDiv from "./HeaderDiv";
 import { AdmissionContent } from "./AdmissionContent";
 import { Contact } from "../Contact/Contact";
